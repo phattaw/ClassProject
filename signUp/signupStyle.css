@@ -1,5 +1,5 @@
 body{
-    background-image: url("./images/sports.png");
+    background-image: url("../../assets/images/sports.png");
     
 }
 
@@ -10,9 +10,8 @@ body{
     line-height: 1.125;
 }
 
-
 .hero { 
-    background-image: url("./images/sports.png");
+   /* background-image: url("../../assets/images/sports.png");*/
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
@@ -33,6 +32,7 @@ body{
 }
 
 .navbar {
+    display:none;
     background-color: black;
     min-height: 3.25rem;
     position: relative;
@@ -50,14 +50,27 @@ a {
     text-decoration: none;
 }
 
-.footer {
+.footer {    
     background-color:black;
     padding: 3rem 1.5rem 6rem;
     text-decoration-color: white;
 }
 
-
 strong {
     color:orange;
     font-weight: 700;
+}
+
+.input, .button{
+    width: 40%;
+    margin: 0 0 0 10%;
+}
+
+.button{
+    width:10%;
+}
+.errorMsg{
+    font-size: 20px;
+    color:white;
+    margin: 0 0 0 5%;
 }
