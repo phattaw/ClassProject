@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sports Review </title>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="signUpJS.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="signupStyle.css">
+</head>
+
+<body>
+  <section class="hero is-small ">
+
+    <div class="content has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Sign Up
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+
+
+      </a><a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">
+          Home
+        </a>
+
+        <a class="navbar-item" href="NBA.html">
+          NBA
+        </a>
+
+        <a class="navbar-item" href="MLB.html">
+          MLB
+        </a>
+        <a class="navbar-item" href="NFL.html">
+          NFL
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="Other Sports.html">
+              Other Sports
+            </a>
+            <a class="navbar-item" href="contact.html">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="Login.html">
+              Login
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </nav>
+  <br>
+
+  <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <input class="input" id="submitEmail" type="email" placeholder="Email">
+          <span class= "errorMsg" id = "emailError">Enter a valid email address</span>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span> 
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" id="submitPassword" type="password" placeholder="Password">
+          <span class= "errorMsg" id = "passwordError">Enter your desired password of 6 to 12 letters and numbers</span>
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" id="submitConfirmPassword" type="password" placeholder="Confirm Password">
+          <span class= "errorMsg" id = "confirmError">Confirm your password</span>
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button id= "submitBtn" class="button is-primary">
+            Submit
+          </button>
+        </p>
+      </div>
+  <br>
+  <footer class="footer is-small">
+   <div class="content has-text-centered">
+      <p>
+        <strong></strong></p>
+      <h1><strong>Sports Review</strong></h1>
+
+      <p>&copy;</p>
+    </div>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+ /* var config = {
+    apiKey: "AIzaSyBZdLgU-CE2cKuwZZ9cJ64cNJHbNDjonZg",
+    authDomain: "class-project-1-856d5.firebaseapp.com",
+    databaseURL: "https://class-project-1-856d5.firebaseio.com",
+    projectId: "class-project-1-856d5",
+    storageBucket: "class-project-1-856d5.appspot.com",
+    messagingSenderId: "865560392389"
+  };
+  firebase.initializeApp(config);
+  */
+</script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+-->
+</body>
+
+</html>
