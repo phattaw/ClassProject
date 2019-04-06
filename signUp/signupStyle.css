@@ -1,0 +1,76 @@
+body{
+    background-image: url("../../assets/images/sports.png");
+    
+}
+
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: orange;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.hero { 
+   /* background-image: url("../../assets/images/sports.png");*/
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+}
+
+.navbar-menu{
+    background-color:black;
+    box-shadow: 0 8px 16px rgba(10,10,10,.1);
+    padding: .5rem 0;
+}
+
+
+.navbar-brand .navbar-item, .navbar-tabs .navbar-item {
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+
+.navbar {
+    display:none;
+    background-color: black;
+    min-height: 3.25rem;
+    position: relative;
+    z-index: 30;
+}
+
+.navbar-link, a.navbar-item {
+    cursor:pointer;
+    color: orange;
+}
+
+a {
+    color: orange;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer {    
+    background-color:black;
+    padding: 3rem 1.5rem 6rem;
+    text-decoration-color: white;
+}
+
+strong {
+    color:orange;
+    font-weight: 700;
+}
+
+.input, .button{
+    width: 40%;
+    margin: 0 0 0 10%;
+}
+
+.button{
+    width:10%;
+}
+.errorMsg{
+    font-size: 20px;
+    color:white;
+    margin: 0 0 0 5%;
+}
