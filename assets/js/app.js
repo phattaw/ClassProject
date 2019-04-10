@@ -6,11 +6,6 @@ $(document).ready(function () {
         addGifs(topics[i]);
     }
 
-    // function addThisGifs() {
-    //     var animal = $(this).attr("data-animal");
-    //     addGifs(animal);
-    // }
-
     function addGifs(animal, limit) {
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             animal + "&api_key=dc6zaTOxFJmzC&limit=" + limit;
