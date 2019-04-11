@@ -28,11 +28,9 @@ $("#submitBtn").on("click", function(event){
 
     email = $("#submitEmail").val();
     var emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    console.log("Reg Exp test for email is " + emailRegExp.test(email));
-    console.log("email is " + email);
-    //if (email === ""){
-      //  $("#emailError").text("Well, enter something!");
-    //}
+    //console.log("Reg Exp test for email is " + emailRegExp.test(email));
+    //console.log("email is " + email);
+    
     if (emailRegExp.test(email)){
         $("#emailError").text("Valid email");
         emailValid = true;
@@ -40,43 +38,44 @@ $("#submitBtn").on("click", function(event){
     else{
         $("#emailError").text("Not a valid email. Try again");
         emailValid = false;
+        $("#submitEmail").val("");
     }
 
     password = $("#submitPassword").val().trim().toLowerCase();
     var passwordRegExp = /^[a-zA-Z0-9]{6,12}$/i;
-    //console.log("Reg Exp test for password is " + passwordRegExp.test(password));
-    console.log("password is " + password);
-    //if (email === ""){
-      //  $("#emailError").text("Well, enter something!");
-    //}
+   
+    //console.log("password is " + password);
+    
     if (passwordRegExp.test(password)){
         $("#passwordError").text("Valid password");
         passwordValid = true;
-        console.log("passwordValid after regexp is " + passwordValid);
+       // console.log("passwordValid after regexp is " + passwordValid);
     } 
     else{
-        $("#passwordError").text("Not a valid password. Try again");
+        $("#passwordError").text("Your password is nonconforming. Try again");
         passwordValid = false;
+        $("#submitPassword").val("");
     }
 
     confirmPassword = $("#submitConfirmPassword").val().trim().toLowerCase();
     var confirmPasswordRegExp = /^[a-zA-Z0-9]{6,12}$/i;
     if (confirmPasswordRegExp.test(confirmPassword)){
         confirmValid = true;
-        console.log("confirmValid after regEx is" +confirmValid);
+        //console.log("confirmValid after regEx is" +confirmValid);
         }
-    //console.log("Reg Exp test for confirmPassword is " + confirmPasswordRegExp.test(password));
-    console.log("confirmPassword is " + confirmPassword);
-    //if (email === ""){
-      //  $("#emailError").text("Well, enter something!");
-    //}
-    if (password === confirmPassword&&confirmPassword!=""&&confirmPassword.length > 5 && confirmValid&&passwordValid){
+
+    //console.log("confirmPassword is " + confirmPassword);
+
+    if (password === confirmPassword&&confirmValid&&passwordValid){
         $("#confirmError").text("Passwords match");
         confirmValid = true;
     } 
+    
     else{
         $("#confirmError").text("Passwords don't match. Try again");
         confirmValid = false;
+        $("#submitConfirmPassword").val("");
+        $("#submitPassword").val("");
     }  
     storeEmail= email;
     storePassword = password;
@@ -91,8 +90,6 @@ $("#submitBtn").on("click", function(event){
     }
 
    database.ref().on("value", function(snapshot) {
-
-        // Log everything that's coming out of snapshot
         console.log(snapshot.val());
         console.log("email in storage is " + snapshot.val().email);
         console.log("password in storage is " + snapshot.val().password);
