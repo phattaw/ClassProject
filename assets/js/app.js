@@ -6,6 +6,11 @@ $(document).ready(function () {
         addGifs(topics[i]);
     }
 
+    let team = 'bulls'
+    let city = 'chicago'
+
+    addSeatGeekInfo(city, team);
+
     function addGifs(animal, limit) {
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             animal + "&api_key=dc6zaTOxFJmzC&limit=" + limit;
@@ -126,4 +131,54 @@ $(document).ready(function () {
 
     }
 
+
+    // Our seat geek client id is: MTYxMjg4MTR8MTU1NDc2OTA2Mi45NQ
+    // Our seat geek secret is: bdd962821bf70152c05b0c1906646ecb7719b5a504b551794d99afe42f1df3d6
+    // https://api.seatgeek.com/2/events?client_id=MTYxMjg4MTR8MTU1NDc2OTA2Mi45NQ&client_secret=bdd962821bf70152c05b0c1906646ecb7719b5a504b551794d99afe42f1df3d6
+
+    function addSeatGeekInfo(city, team) {
+        var queryURL = "https://api.seatgeek.com/2/events?taxonomies.name=sports";
+
+        if(city.length) {
+            queryURL += "&q=" + city + "&";
+        }
+
+        if(team.length) {
+            queryURL += "&q=" + team + "&";
+        }
+
+        queryURL += "&client_id=MTYxMjg4MTR8MTU1NDc2OTA2Mi45NQ&client_secret=bdd962821bf70152c05b0c1906646ecb7719b5a504b551794d99afe42f1df3d6"
+
+        console.log(queryURL);
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+
+            var results = response.data;
+            console.log(response);
+
+            for(let i = 0; i < response.events.length; i++) {
+                console.log(response.events[i].short_title);
+                console.log(response.events[i].url);
+                console.log(response.events[i].venue.city);
+                console.log(response.events[i].venue.state);
+
+                let gameDiv = $("<div class='col-xs-12, col-sm-4'>");
+                let title = $("<p>").text(response.events[i].short_title);
+                let city = $("<p>").text(response.events[i].venue.city);
+                let state = $("<p>").text(response.events[i].venue.state);
+                let gameURL = $("<a>");
+                gameURL.attr("href", response.events[i].url);
+                gameURL.append(title);
+
+                gameDiv.append(gameURL);
+                gameDiv.append(city);
+                gameDiv.append(state);
+
+                $("#seat_geek").append(gameDiv);
+            }
+
+        });
+    }
 });
