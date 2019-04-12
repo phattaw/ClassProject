@@ -5,8 +5,17 @@
 }
 
 body{
-    background-image: url("../images/sports.png");
-    
+    /* background-image: url("../images/sports.png"); */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/sports.png");
+  z-index: -1;
 }
 
 
@@ -70,10 +79,10 @@ strong {
 
 .icon-bar {
     position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 75%;
+    -webkit-transform: translateY(-75%);
+    -ms-transform: translateY(-75%);
+    transform: translateY(-75%);
   }
   
   /* Style the icon bar links */
@@ -131,7 +140,7 @@ strong {
     color: #fff;
 }
 
-.button.is-link {
+.button.is-light {
     background-color: orange;
     border-color: transparent;
     color: #fff;

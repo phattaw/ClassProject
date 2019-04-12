@@ -19,82 +19,80 @@
 
 
 <body>
-  <section class="hero is-small ">
+  <div class="background"></div>
+    <section class="hero is-small ">
 
-    <div class="content has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
+      <div class="content has-text-centered">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Other Sports
+            </h1>
+            <h2 class="subtitle">
+              Top Sports News
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./index.html">
+            Home
+          </a>
+
+          <a class="navbar-item" href="./NBA.html" id="linkNBA">
+            NBA
+          </a>
+
+          <a class="navbar-item" href="./MLB.html" id="linkMLB">
+            MLB
+          </a>
+          <a class="navbar-item" href="./NFL.html" id="linkNFL">
+            NFL
+          </a>
+          <a class="navbar-item" href="#">
             Other Sports
-          </h1>
-          <h2 class="subtitle">
-            Top Sports News
-          </h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="./index.html">
-          Home
-        </a>
-
-        <a class="navbar-item" href="./NBA.html" id="linkNBA">
-          NBA
-        </a>
-
-        <a class="navbar-item" href="./MLB.html" id="linkMLB">
-          MLB
-        </a>
-        <a class="navbar-item" href="./NFL.html" id="linkNFL">
-          NFL
-        </a>
-        <a class="navbar-item" href="#">
-          Other Sports
-        </a>
-        <a class="navbar-item" href="./contact.html">
-          Contact
-        </a>
-      </div>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
           </a>
-          <a class="button is-light" href="./login.html">
-            Log in
+          <a class="navbar-item" href="./contact.html">
+            Contact
           </a>
         </div>
       </div>
-    </div>
 
-  </nav>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light" href="./signIn/index.html">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
 
-  <br>
-  <div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
-      <div class="tile">
-        <div class="tile is-parent is-vertical">
+    </nav>
+
+    <br>
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
           <article class="tile is-child box">
-            <!-- Put any content you want -->
+              <!-- Put any content you want -->
             <div class="level-item">
                 <div class="field has-addons">
                     <p class="control">
@@ -114,19 +112,26 @@
             <div class="level-item">
               <p class="subtitle is-5"></p>
             </div>
-          </article>
+            </article>
 
-          <div class="icon-bar">
-            <a href="https://twitter.com/SportsReview4" class="twitter"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="https://fb.me/SportsReview4" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
-            <a href="https://www.youtube.com/channel/UC_TYJ7xmtb3F8odzyECtt0w?view_as=subscriber" class="youtube"><i
-                class="fa fa-youtube fa-2x"></i></a>
-            <a href="https://www.instagram.com/sportsreview44/" class="instagram"><i
-                class="fa fa-instagram fa-2x"></i></a>
+            <div class="icon-bar">
+              <a href="https://twitter.com/SportsReview4" class="twitter"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="https://fb.me/SportsReview4" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
+              <a href="https://www.youtube.com/channel/UC_TYJ7xmtb3F8odzyECtt0w?view_as=subscriber" class="youtube"><i
+                  class="fa fa-youtube fa-2x"></i></a>
+              <a href="https://www.instagram.com/sportsreview44/" class="instagram"><i
+                  class="fa fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box" id="newsFeed">
+              <!-- Put any content you want -->
+
+            </article>
           </div>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child box" id="newsFeed">
+          <article class="tile is-child box">
             <!-- Put any content you want -->
 
           </article>
@@ -136,48 +141,41 @@
         <article class="tile is-child box">
           <!-- Put any content you want -->
 
-        </article>
-      </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child box">
-        <!-- Put any content you want -->
-
-        <div class="level-item">
-          <p class="subtitle is-5">
-            <strong>Giphy Search</strong>
-          </p>
-        </div>
-        <div class="level-item">
-          <div class="field has-addons">
-            <p class="control">
-              <input id="giphy_input" class="input" type="text" placeholder="Find a Giphy">
-            </p>
-            <p class="control">
-              <button id="giphy_search" class="button">
-                Search
-              </button>
+          <div class="level-item">
+            <p class="subtitle is-5">
+              <strong>Giphy Search</strong>
             </p>
           </div>
-        </div>
-        <div class="level-item">
-          <div id="gifs_appear_here"></div>
-        </div>
-      </article>
+          <div class="level-item">
+            <div class="field has-addons">
+              <p class="control">
+              <input id="giphy_input" class="input" type="text" placeholder="Find a Giphy">
+              </p>
+              <p class="control">
+              <button id="giphy_search" class="button">
+                  Search
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="level-item">
+            <div id="gifs_appear_here"></div>
+          </div>
+        </article>
+      </div>
+
     </div>
 
-  </div>
-
-  <br>
-  <footer class="footer is-small">
-    <div class="content has-text-centered">
+    <br>
+    <footer class="footer is-small">
+      <div class="content has-text-centered">
       <p><strong></strong></p>
-      <h1><strong>Sports Review</strong></h1>
+        <h1><strong>Sports Review</strong></h1>
 
-      <p>Jim, Josh, Nate and Jennifer &copy; 2019</p>
-    </div>
-  </footer>
-
+        <p>Jim, Josh, Nate and Jennifer &copy; 2019</p>
+      </div>
+    </footer>
+  
 
 </body>
 
