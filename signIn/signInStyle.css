@@ -1,8 +1,30 @@
 body{
-    background-image: url("../../assets/images/sports.png");
-    
+    /* background-image: url("../assets/images/sports.png");
+    height: 800px; */
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/sports.png");
+    z-index: -1;
+  }
+
+#submitBtn{
+    width:10%;    
+    margin: 0 45%;
+    background-color: orange;
+    border-color: transparent;
+    color: #fff;
+}
+
+#title {
+    margin-top: 45px;
+    color: white;
+}
 
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     color: orange;
@@ -11,7 +33,6 @@ body{
 }
 
 .hero { 
-   /* background-image: url("../../assets/images/sports.png");*/
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
