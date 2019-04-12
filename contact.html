@@ -12,110 +12,122 @@
 </head>
 
 <body>
-  <section class="hero is-small ">
+  <div class="background"></div>
+    <section class="hero is-small ">
 
-    <div class="content has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
+      <div class="content has-text-centered">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Contact
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./index.html">
+            Home
+          </a>
+
+          <a class="navbar-item" href="./NBA.html">
+            NBA
+          </a>
+
+          <a class="navbar-item" href="./MLB.html">
+            MLB
+          </a>
+          <a class="navbar-item" href="./NFL.html">
+            NFL
+          </a>
+          <a class="navbar-item" href="./Other_Sports.html">
+            Other Sports
+          </a>
+          <a class="navbar-item" href="./contact.html">
             Contact
-          </h1>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="./index.html">
-          Home
-        </a>
-
-        <a class="navbar-item" href="./NBA.html">
-          NBA
-        </a>
-
-        <a class="navbar-item" href="./MLB.html">
-          MLB
-        </a>
-        <a class="navbar-item" href="./NFL.html">
-          NFL
-        </a>
-        <a class="navbar-item" href="./Other_Sports.html">
-          Other Sports
-        </a>
-        <a class="navbar-item" href="./contact.html">
-          Contact
-        </a>
-      </div>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light" href="./login.html">
-            Log in
           </a>
         </div>
       </div>
-    </div>
-  </nav>
-  <br>
 
-  <div class="container">
-    <div class="field">
-      <form action="mailto:sportsreview4@gmail.com" method="post" enctype="text/plain">
-        <label class="label">Name</label>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light" href="./signIn/index.html">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+
+    <div class="container">
+      <div class="field">
+        <form action="mailto:sportsreview4@gmail.com" method="post" enctype="text/plain">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter Name">
+          </div>
+      </div>
+
+      <div class="field">
+
+        <div class="control has-icons-left has-icons-right">
+
+
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Enter Name">
+          <input class="input" type="email" placeholder="Email input">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
         </div>
-    </div>
-
-    <div class="field">
-
-      <div class="control has-icons-left has-icons-right">
-
-
-        <span class="icon is-small is-right">
-          <i class="fas fa-check"></i>
-        </span>
       </div>
 
-    </div>
 
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control">
-        <input class="input" type="email" placeholder="Email input">
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-small is-right">
-          <i class="fas fa-exclamation-triangle"></i>
-        </span>
+
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Enter Messege"></textarea>
+        </div>
       </div>
-    </div>
 
 
 
-    <div class="field">
-      <label class="label">Message</label>
-      <div class="control">
-        <textarea class="textarea" placeholder="Enter Messege"></textarea>
+
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-light">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-light">Cancel</button>
+        </div>
       </div>
     </div>
 
@@ -123,58 +135,44 @@
 
 
 
-    <div class="field is-grouped">
-      <div class="control">
-        <button class="button is-link">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <footer class="footer is-small">
+      <div class="content has-text-centered">
+        <p>
+          <strong></strong></p>
+        <h1><strong>Sports Review</strong></h1>
+
+        <p>Jim, Josh, Nate and Jennifer &copy; 2019</p>
+        <a href="https://twitter.com/SportsReview4">
+          <p class="title fab fa-twitter fa-2x"></p>
+        </a>
+        <a href="https://fb.me/SportsReview4">
+          <p class="title fab fa-facebook fa-2x"></p>
+        </a>
+        <a href="https://www.youtube.com/channel/UC_TYJ7xmtb3F8odzyECtt0w?view_as=subscriber">
+          <p class="title fab fa-youtube fa-2x"></p>
+        </a>
+        <a href="https://www.instagram.com/sportsreview44/">
+          <p class="title fab fa-instagram fa-2x"></p>
+        </a>
       </div>
-      <div class="control">
-        <button class="button is-link">Cancel</button>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <br>
-  <footer class="footer is-small">
-    <div class="content has-text-centered">
-      <p>
-        <strong></strong></p>
-      <h1><strong>Sports Review</strong></h1>
-
-      <p>Jim, Josh, Nate and Jennifer &copy; 2019</p>
-      <a href="https://twitter.com/SportsReview4">
-        <p class="title fab fa-twitter fa-2x"></p>
-      </a>
-      <a href="https://fb.me/SportsReview4">
-        <p class="title fab fa-facebook fa-2x"></p>
-      </a>
-      <a href="https://www.youtube.com/channel/UC_TYJ7xmtb3F8odzyECtt0w?view_as=subscriber">
-        <p class="title fab fa-youtube fa-2x"></p>
-      </a>
-      <a href="https://www.instagram.com/sportsreview44/">
-        <p class="title fab fa-instagram fa-2x"></p>
-      </a>
-    </div>
-  </footer>
-
+    </footer>
+  
 
 </body>
 
