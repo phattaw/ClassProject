@@ -18,7 +18,7 @@ body{
 
 
 .hero { 
-    background-image: url("./images/sports.png");
+    background-image: url("../images/sports.png");
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
@@ -135,4 +135,19 @@ strong {
     background-color: orange;
     border-color: transparent;
     color: #fff;
+}
+
+.seat_geek_icons {
+  clear: none;
+  float: left;
+}
+
+.seat_geek_text {
+  clear: none;
+  float: left;
+  margin: 0px 0px 0px 5px;
+}
+
+.giphy {
+  margin: 10px 0 10px 0px;
 }

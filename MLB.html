@@ -20,7 +20,6 @@
 
 <body>
   <section class="hero is-small ">
-
     <div class="content has-text-centered">
       <div class="hero-body">
         <div class="container">
@@ -35,16 +34,13 @@
     </div>
   </section>
 
-
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
         data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
-
       </a>
     </div>
 
@@ -94,9 +90,27 @@
     <div class="tile is-vertical is-8">
       <div class="tile">
         <div class="tile is-parent is-vertical">
-          <article class="tile is-child box" id="seat_geek">
+          <article class="tile is-child box">
             <!-- Put any content you want -->
-
+            <div class="level-item">
+                <div class="field has-addons">
+                    <p class="control">
+                      <input id="city" class="input" type="text" placeholder="City">
+                    </p>
+                    <p class="control">
+                      <input id="team" class="input" type="text" placeholder="Team">
+                    </p>
+                    <p class="control">
+                      <button id="seat_geek_search" class="button">
+                        Search
+                      </button>
+                  </p>
+                </div>
+              </div>
+              <div id="seat_geek"></div>
+            <div class="level-item">
+              <p class="subtitle is-5"></p>
+            </div>
           </article>
 
           <div class="icon-bar">
@@ -135,10 +149,10 @@
         <div class="level-item">
           <div class="field has-addons">
             <p class="control">
-              <input class="input" type="text" placeholder="Find a Giphy">
+              <input id="giphy_input" class="input" type="text" placeholder="Find a Giphy">
             </p>
             <p class="control">
-              <button class="button">
+              <button id="giphy_search" class="button">
                 Search
               </button>
             </p>
@@ -154,14 +168,12 @@
   <br>
   <footer class="footer is-small">
     <div class="content has-text-centered">
-      <p>
-        <strong></strong></p>
+      <p><strong></strong></p>
       <h1><strong>Sports Review</strong></h1>
 
       <p>Jim, Josh, Nate and Jennifer &copy; 2019</p>
     </div>
   </footer>
-
 
 </body>
 
